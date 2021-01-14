@@ -1,0 +1,21 @@
+{
+  "name": "auto_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress open",
+    "test": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cucumber": "^7.0.0-rc.0",
+    "cypress": "^5.5.0",
+    "cypress-cucumber-preprocessor": "^4.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "chromeWebSecurity": false,
+  "viewportWidth": 1440,
+  "viewportHeight": 900,
+  "baseUrl": "http://the-internet.herokuapp.com/",
+  "defaultCommandTimeout": 10000,
+  "pageLoadTimeout": 30000,
+  "watchForFileChanges": false,
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": ["*.js"],
+  "includeShadowDom": false,
+  "projectId": "b1bo1n"
+}
