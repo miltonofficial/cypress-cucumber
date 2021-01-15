@@ -1,19 +1,23 @@
+
 import { Given, When, Then, And} from 'cypress-cucumber-preprocessor/steps'
+import {pageElements} from '../../pages/elementPage'
 
 Given('user is on Add/Remove Elements page', () => {
-  cy.visit("/add_remove_elements/")
+  pageElements.visitElementsPage()
 })
-When('he clicks on \'Add Element\'', () => {
-  cy.get("button").click()
-})
-Then('Delete button should appear', () => {
-  cy.get("button.added-manually").should('be.visible')
+When('he chooses the file', () => {
+  pageElements.clickOnAddButton()
 })
 
-Then('he click on \'Delete\' button', () => {
-  cy.get("button.added-manually").should('be.visible').click()
+Then('Delete button should appear', () => {
+  pageElements.deleteButtionIsVisisble()
+})
+
+Then('he clicks on \'Delete\' button', () => {
+  pageElements.clickOnDeleteButton()
 })
 
 And('Delete button should disappear', () => {
-  cy.get("button.added-manually").should('not.be.visible')
+  pageElements.deleteButtionIsNotVisisble
 })
+

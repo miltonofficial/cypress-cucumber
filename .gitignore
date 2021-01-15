@@ -9,4 +9,3 @@ cypress/screenshots
 **/.DS_Store
 
 # sensitive files
-cypress/fixtures/
