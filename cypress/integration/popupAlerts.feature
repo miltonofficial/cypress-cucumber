@@ -1,4 +1,4 @@
-Feature: uploading file 
+Feature: Browser Popups 
 
     Background:
         Given user is on JavaScript Alerts page
