@@ -5,7 +5,7 @@ import {pageElements} from '../../pages/elementPage'
 Given('user is on Add/Remove Elements page', () => {
   pageElements.visitElementsPage()
 })
-When('he chooses the file', () => {
+When('he clicks on \'Add Element\'', () => {
   pageElements.clickOnAddButton()
 })
 

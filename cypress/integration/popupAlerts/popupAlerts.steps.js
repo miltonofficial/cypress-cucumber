@@ -10,12 +10,12 @@ When(`User clicks on {string} button`,(buttonName) => {
     popups.clickAlertButton(buttonName)
 })
 
-And('User clicks {string} on the popup', (action) => {
-    popups.alertAction(action)
+And('User clicks "ok" on the popup', () => {
+    popups.alertPopup()
 })
 // step for confirm alert 
 And('User clicks {string} on the confrim popup', (action) => {
-    popups.confirmAlertAction(action)
+    popups.confirmPopup(action)
 })
 
 Then('{string} message should appear', (successMessage) => {

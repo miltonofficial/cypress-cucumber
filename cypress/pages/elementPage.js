@@ -19,7 +19,7 @@ export class elements{
     }
 
     clickOnDeleteButton(){
-        returnthis.deleteButton().should("be.visible").click()
+        return this.deleteButton().should("be.visible").click()
     }
 }
 

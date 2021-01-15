@@ -15,17 +15,24 @@ export class popupAlerts{
         return this.confirmation().should("contain",`${successMessage}`)
     }
 
-    confirmAlertAction(action){
+    confirmPopup(action){
         const alertText = "I am a JS Confirm"
-        return this.popupAction(action, alertText);
+        return this.popupConfirmAction(action, alertText);
     }
     
-    alertAction(action){
+    alertPopup(){
         const alertText = "I am a JS Alert"
-        return this.popupAction(action, alertText);
+        return this.popupAlertAction(alertText);
     }
     
-    popupAction(action,alertText){
+    popupAlertAction(alertText){
+        
+        cy.on(`window:alert`, (message) => {
+            expect(message).to.equal(`${alertText}`)
+            return true
+        })
+    }
+    popupConfirmAction(action,alertText){
         
         cy.on(`window:confirm`, (message) => {
             expect(message).to.equal(`${alertText}`)
