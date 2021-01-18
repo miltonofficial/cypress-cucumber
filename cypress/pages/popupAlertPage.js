@@ -16,6 +16,8 @@ export class popupAlerts{
     }
 
     confirmPopup(action){
+        cy.clearLocalStorage()
+        cy.clearCookies()
         const alertText = "I am a JS Confirm"
         return this.popupConfirmAction(action, alertText);
     }
@@ -26,14 +28,14 @@ export class popupAlerts{
     }
     
     popupAlertAction(alertText){
-        
+        cy.clearLocalStorage()
         cy.on(`window:alert`, (message) => {
             expect(message).to.equal(`${alertText}`)
             return true
         })
     }
     popupConfirmAction(action,alertText){
-        
+
         cy.on(`window:confirm`, (message) => {
             expect(message).to.equal(`${alertText}`)
             if (action == "ok") {
