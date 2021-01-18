@@ -9,5 +9,16 @@
   "testFiles": "**/*.feature",
   "ignoreTestFiles": ["*.js"],
   "includeShadowDom": false,
-  "projectId": "b1bo1n"
+  "projectId": "b1bo1n",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+      "reporterEnabled": "mochawesome",
+      "mochawesomeReporterOptions": {
+          "reportDir": "cypress/reports/mocha",
+          "quite": true,
+          "overwrite": false,
+          "html": false,
+          "json": true
+      }
+  }
 }

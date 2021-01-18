@@ -3,6 +3,7 @@ logs
 *.log
 
 # Dependency directory
+cypress/reports/*
 node_modules
 cypress/videos
 cypress/screenshots
