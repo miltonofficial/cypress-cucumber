@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Install or Update Node Packages') {
              sh '''npm install'''
-            }
+    
         }     
         stage('Execute Tests') {
              sh '''npm test'''
