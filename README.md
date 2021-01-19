@@ -1,5 +1,5 @@
 # cypress-cucumber
-Contains e2e tests in cypress cucumber (gherkin) in javascript with page object pattarn.
+Contains e2e tests in cypress cucumber (gherkin) in javascript with page object pattern.
 
 ## Prerequisites:
   - Node.js 12 and above
@@ -14,3 +14,4 @@ Contains e2e tests in cypress cucumber (gherkin) in javascript with page object 
 - To run all the tests run ```npm run test:all```
 - To run smoke tests run ```npm run test:smoke```
 - To run regression tests run ```npm run test:regression```
+- To run selected testes tests run ```npm test cypress/intergration/elements.feature```
