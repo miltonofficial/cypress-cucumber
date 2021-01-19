@@ -14,4 +14,4 @@ Contains e2e tests in cypress cucumber (gherkin) in javascript with page object 
 - To run all the tests run ```npm run test:all```
 - To run smoke tests run ```npm run test:smoke```
 - To run regression tests run ```npm run test:regression```
-- To run selected testes tests run ```npm test cypress/intergration/elements.feature```
+- To run selected tests run ```npm test cypress/integration/elements.feature``` If you are trying to pass multiple arguments, separate them with commas instead: npm test ```cypress/integration/test1,cypress/integration/test2,cypress/integration/etc```
