@@ -7,11 +7,14 @@ pipeline {
             }
         }
         stage('Install or Update Node Packages') {
+            step{
              sh '''npm install'''
-    
+            }
         }     
         stage('Execute Tests') {
-             sh '''npm test'''
+            step{
+                sh '''npm test'''
+            } 
         }      
     }
 }
